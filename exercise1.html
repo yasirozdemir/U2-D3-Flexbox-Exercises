@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>Flexbox Exercises</title>
+    <style>
+        body {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .first-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .second-container {
+            display: flex;
+            height: 70vh;
+        }
+
+        header, footer {
+            color: white;
+            background-color: #111023;
+            height: 15vh;
+        }
+            
+        article {
+            color: black;
+            background-color: white;
+            flex-grow: 4;
+        }
+
+        aside {
+            color: white;
+            background-color: #320388;
+            flex-grow: 1;
+        }
+        
+        nav {
+            color: white;
+            background-color: #C22177;
+            flex-grow: 1;
+        }
+
+        span {
+            display: inline-block;
+            padding-top: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="first-container">
+        <header>
+            <span>Header</span>
+        </header>
+        <div class="second-container">
+            <article>
+                <span>Article</span>
+            </article>
+            <aside>
+                <span>Aside</span>
+            </aside>
+            <nav>
+                <span>Nav</span>
+            </nav>
+        </div> 
+        <footer>
+            <span>Footer</span>
+        </footer>
+   </div>
+</body>
+</html>
