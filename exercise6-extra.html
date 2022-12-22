@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <title>EXTRA 6</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main-container {
+            display: flex;
+            height: 400px;
+            border: 2px solid black;
+            border-radius: 50px;
+            overflow: hidden;
+            width: 80vw;
+            margin-inline: auto;
+            margin-top: 25vh;
+        }
+
+        .container-for-rest {
+            display: flex;
+            height: 400px;
+
+            flex-grow: 1;
+        }
+
+        .first-column {
+            background-color: #88B46F;
+            color: white;
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-right: 2px solid black;
+        }
+
+        .second-column {
+            display: flex;
+            background-color: #699AFC;
+            color: white;
+            flex-grow: 1;
+            align-items: flex-end;
+        }
+
+        .second-column span {
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .third-column {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 3;
+        }
+
+        .third-column-part1, .third-column-part2, .third-column-part3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .third-column-part1 {
+            background-color: #fff8b1;
+            flex-grow: 1;
+        }
+
+        .third-column-part2 {
+            background-color: #fff693;
+            flex-grow: 1;
+        }
+
+        .third-column-part3 {
+            background-color: #fdee45;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="first-column">
+            First Column <br>
+            Height 400px <br>
+            Greenish background <br>
+            Text centered
+        </div>
+        <div class="container-for-rest">
+            <div class="second-column">
+                <span>
+                    Second Column <br>
+                    Text To The Bottom <br>
+                    Bold, Blueish <br>
+                    background
+                </span>
+            </div>
+            <div class="third-column">
+                <div class="third-column-part1">
+                    Third Column Part 1
+                </div>
+                <div class="third-column-part2">
+                    Third Column Part 2
+                </div>
+                <div class="third-column-part3">
+                    Third Column Part 3
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
